@@ -2,7 +2,6 @@
 
 ## MC3 - Bioinformática básica
 
-* Slides: 
-* Pipeline:
-
+* [Slides](https://github.com/waldeyr/bsb2018/blob/master/latex/bsb2018_minicurso.pdf) 
+* [Pipeline](https://github.com/waldeyr/bsb2018/blob/master/pipeline/pipelinedenovo.md)
 
