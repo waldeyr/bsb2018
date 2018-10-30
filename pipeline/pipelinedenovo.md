@@ -12,7 +12,7 @@ O DNA da E. kobei foi sequenciado usando a plataforma Illumina HiSeq, gerando re
 ### Filtragem com Trimmomatic [2]
 * java -jar Trimmomatic-0.36/trimmomatic-0.36.jar PE -phred33 ERR885455_1.fastq.gz ERR885455_2.fastq.gz  ERR885455_1_FILTERED.fastq ERR885455_1_UNPAIRED.fastq   ERR885455_2_FILTERED.fastq ERR885455_2_UNPAIRED.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 -validatePairs
 
-### Monatgem com Spades [2]
+### Montagem com Spades [2]
 * python3 Spades/bin/spades.py --pe1-1 ERR885455_1_FILTERED.fastq --pe1-2 ERR885455_2_FILTERED.fastq --careful --only-assembler --cov-cutoff auto -t 2 -o minha_montagem
 
 ### Relatório de resultados da montagem com Quast [4]
