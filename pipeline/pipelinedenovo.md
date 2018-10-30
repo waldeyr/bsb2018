@@ -2,12 +2,12 @@
 
 ## MC3 - Bioinformática básica
 
-Este workflow consiste em uma montagem de novo de um isolado da bactéria Enterobacter kobei, a qual é é multiresistente a drogas.
+Este workflow consiste em uma montagem de novo de um isolado da bactéria Enterobacter kobei, a qual é multiresistente a drogas.
 O DNA da E. kobei foi sequenciado usando a plataforma Illumina HiSeq, gerando reads com 100 bp paired-end [1].
 
 ### Obtendo os dados de sequenciamento
 * wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR885/ERR885455/ERR885455_1.fastq.gz
-* wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR885/ERR885455/ERR885455_1.fastq.gz
+* wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR885/ERR885455/ERR885455_2.fastq.gz
 
 ### Filtragem com Trimmomatic [2]
 * java -jar Trimmomatic-0.36/trimmomatic-0.36.jar PE -phred33 ERR885455_1.fastq.gz ERR885455_2.fastq.gz  ERR885455_1_FILTERED.fastq ERR885455_1_UNPAIRED.fastq   ERR885455_2_FILTERED.fastq ERR885455_2_UNPAIRED.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 -validatePairs
